@@ -265,6 +265,17 @@ body {
 	margin-bottom: 6px;
 	margin-right: 10px;
 }
+
+.contents p a{
+	display: block;
+}
+/** form **/
+.formulario input {
+	margin: 7px 0;
+}
+.formulario input:last-of-type {
+	margin-top: 21px;
+}
 /** About **/
 #about .frame1 {
 	float: none;
