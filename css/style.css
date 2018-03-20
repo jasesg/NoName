@@ -1,3 +1,4 @@
+/*------------------------------ Fuentes ------------------------------*/
 @font-face {
 	font-family: 'Muli';
 	src: url('../fonts/Muli-Regular.eot');
@@ -22,7 +23,7 @@
 /*-------------------------------------------------------------*/
 
 body {
-	background-color: #f6f6f6;
+	background-color: #e4e4e4;
 	font-family: 'Muli-Light';
 	margin: 0;
 }
@@ -41,8 +42,11 @@ img {
 .play1, .play2, .play3, .btn, .previous, .next, #performances #sidebar span.more {
 	background: url(../images/buttons.png) no-repeat;
 }
-.frame1, .frame2, .frame3 {
-	background: url(../images/frames.png) no-repeat;
+.frame1{
+    border-radius: 22px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 5px grey;
 }
 .video1, .video2, .video3 {
 	background: url(../images/frame-videos.png) no-repeat;
@@ -94,31 +98,6 @@ img {
 	filter:alpha(opacity=80);
 	opacity: 0.8;
 }
-.frame1 {
-	float: right;
-	background-position: 0 bottom;
-	height: 510px;
-	width: 444px;
-	margin: 0 4px 30px 36px;
-	padding: 18px 18px 32px 33px;
-	overflow: hidden;
-}
-.frame2 {
-	background-position: 0 -259px;
-	height: 379px;
-	width: 547px;
-	margin: 0 0 12px;
-	padding: 17px 40px 30px 18px;
-	overflow: hidden;
-}
-.frame3 {
-	background-position: 0 0;
-	height: 199px;
-	width: 286px;
-	margin: 0 0 12px;
-	padding: 8px 19px 15px 9px;
-	overflow: hidden;
-}
 .video1 {
 	background-position: 0 -93px;
 	height: 154px;
@@ -163,7 +142,7 @@ img {
 }
 /*------------------------------ HEADER ------------------------------*/
 #header {
-	background-color: #303030;
+	background-color: #5d0227;
 	width: 100%;
 	text-align: right;
 	position: absolute;
@@ -187,9 +166,7 @@ img {
 }
 /** Logo **/
 #logo {
-	float: left;
 	display: inline-block;
-	margin-top: 20px;
 }
 /** Navigation **/
 #navigation {
@@ -248,7 +225,8 @@ img {
 #featured {
 	float: left;
 	background-position: right 0;
-	height: 500px;
+    min-height: 180px;
+	height: auto;
 	width: 608px;
 	margin: 0 20px 30px 0;
 	padding: 0 10px 0 0;
@@ -259,22 +237,8 @@ img {
 	margin: 0;
 	padding: 0;
 }
-#featured li {
-	float: left;
-	width: 304px;
-	margin-bottom: 18px;
-	position: relative;
-}
 #featured li p {
-	color: #000;
-	font-family: "Muli";
-	padding-bottom: 0;
-	text-transform: uppercase;
-}
-#featured li p span {
-	color: #606060;
-	display: block;
-	padding-right: 20px;
+    color: #000;
 }
 #schedule ul {
 	color: #606060;
@@ -689,8 +653,8 @@ img {
 }
 /*------------------------------ FOOTER ------------------------------*/
 #footer {
-	background-color: #fff;
-	color: #606060;
+	background-color: #828282;
+	color: #ffffff;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	line-height: 24px;
@@ -715,7 +679,7 @@ img {
 	text-transform: uppercase;
 }
 #footer a {
-	color: #606060;
+	color: #ffffff;
 	text-decoration: none;
 }
 #footer a:hover {
